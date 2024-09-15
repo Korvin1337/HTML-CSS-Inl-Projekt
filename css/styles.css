@@ -58,6 +58,12 @@ body {
     background-color: hsl(0, 0%, 27%);
 }
 
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 .container {
     width: 100%;
     padding-left: var(--container-padding);
@@ -200,6 +206,42 @@ header .container {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--clr-muted-text);
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .copyright {
+
+    }
+
+    .credit {
+        display: none;
+    }
+}
+
+
 @media (width > 768px) {
 
     .container {
@@ -212,6 +254,12 @@ header .container {
 
     header .container {
         gap: 3rem;
+    }
+
+    footer {
+        .credit {
+            display: block;
+        }
     }
 
 }
