@@ -8,7 +8,7 @@
     <meta name="description" content="Mitt projekt i kursen HTML & CSS">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="imgages/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -19,14 +19,13 @@
 
         <header>
             <div class="container">
-
                 <a href="index.html"><img src="images/logo.svg" alt="Silicion Logotype"></a>
 
-                <nav>
-                    <a href="#">Features</a>
+                <nav id="main-menu" class="navbar">
+                    <a class="nav-link" href="#">Features</a>
                 </nav>
 
-                <div class=""btn-toggle-switch">
+                <div id="darkmode-toggle-switch" class="btn-toggle-switch">
                     <span class="label">Dark mode</span>
                     <label for="darkmode-switch" class="toggle-switch">
                         <input id="darkmode-switch" type="checkbox">
@@ -35,14 +34,14 @@
                 </div>
 
 
-                <a href="#">
-                    <i>
-                        <a href="images/icon-l.svg"></a>
+                <a id="auth-signin" href="#" class="btn-primary">
+                    <i class="center-text">
+                        <img src="images/icon-l.svg" alt="person icon">
                         <span>Sign in / up</span>
                     </i>
                 </a>
 
-                <button>
+                <button class="btn-mobile">
 
                     <i class="fa-regular fa-bars"></i>
 
