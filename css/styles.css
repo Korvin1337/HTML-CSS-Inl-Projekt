@@ -241,6 +241,31 @@ footer {
     }
 }
 
+#brands {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
+
+.brand-box {
+    border: 1px solid var(--clr-divider-border);
+    border-radius: 8px;
+    padding: 2rem;
+    height: 75px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (width > 768px) {
 
@@ -260,6 +285,14 @@ footer {
         .credit {
             display: block;
         }
+    }
+
+    #brands {
+        display: block;
+    }
+
+    #brand-1, #brand-2 {
+        display: none;
     }
 
 }
@@ -293,6 +326,10 @@ footer {
         justify-content: center;
         align-items: center;
         gap: .25rem;
+    }
+
+    #brand-1, #brand-2 {
+        display: block;
     }
 
 }
