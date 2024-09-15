@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    /* GREYSCALE */
+    --clr-heading-dark: #080F19;
+    --clr-navigation: #33354D;
+    --clr-body-text: #565973;
+    --clr-muted-text: #9397AD;
+    --clr-input-placeholder: #B4B7C9;
+    --clr-forms-border: #D4D7E5;
+    --clr-divider-border: #E2E5F1;
+    --clr-secondary: #EFF2FC;
+    --clr-light-bg: #D9D9D9;
+
+    /* BRAND */
+    --clr-primary: #6366F1;
+    --clr-gradient: linear-gradient(to right, #6366F1, #8B5CF6 50%, #D946EF);
+
+    /* SYSTEM */
+    --clr-error: #EF4444;
+    --clr-success: #22C55E;
+    --clr-warning: #FFBA08;
+    --clr-info: #4C82F7;
+
+    /* SHADOWS */
+    --clr-shadow: #131022;
+    --clr-brand-btn: #6366F1;
+    --clr-shadow-secondary: #EFF2FC;
+
+
+    --container-padding: 1rem;
+    --transition-time: all 0.2s;
+}
+
+* {
+    /*margin: 0;
+    padding: 0;*/
+    box-sizing: border-box;
+}
+
+body, section, div, header, footer, main, aside, nav, blockquote, p, span {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: hsl(0, 0%, 27%);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+
+
+@media (width > 800px) {
+
+}
