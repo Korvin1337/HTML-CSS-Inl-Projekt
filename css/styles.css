@@ -56,14 +56,37 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    background-color: hsl(0, 0%, 27%);
+    background-color: hsl(0, 0%, 20%);
 }
+
+
+/* CHAT GPT HJÄLP MED MAX WIDTH FÖR DESKTOP */
+section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+/* SLUT CHATGPT */
 
 .wrapper {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
 }
+
+/* Utility classes ? */
+
+.mtd-text {
+    color: var(--clr-muted-text);
+}
+
+.hidden {
+    display: none;
+}
+
+/* --------------- */
 
 .container {
     width: 100%;
@@ -269,6 +292,95 @@ footer {
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    .headline h2 {
+        color: var(--clr-black);
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: .5rem;
+    }
+
+    .container-2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "images features features";
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headline h2 {
+        margin-top: 0;
+    }
+
+    .images {
+        grid-area: images;
+    }
+
+    .features {
+        grid-area: features;
+    }
+
+    h5 {
+        color: var(--clr-black);
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: .5rem;
+    }
+
+    .icon-text {
+        color: var(--clr-body-text);
+        margin-bottom: 0;
+    }
+
+    .icon-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icon-image {
+        display: grid;
+        gap: .5rem;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .icon-image img {
+        grid-column: 1;
+    }
+
+    .icon-text-content {
+        grid-column: 2;
+        padding-left: .5rem;
+    }
+
+    .icon-text {
+        color: var(--clr-body-text);
+    }
+
+    @media (min-width: 768px) {
+        .container-2 {
+            display: flex;
+        }
+
+        .headline{
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1400px) {
+
+        .hidden {
+            display: block;
+        }
+
+        .container-2 {
+            display: grid;
+        }
     }
 
 }
@@ -353,7 +465,42 @@ footer {
 }
 
 
+#slider {
+    background-color: #F3F8FF;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    .headline h2 {
+        color: var(--clr-black);
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    .bottomline {
+        text-align: center;
+        h3 {
+            color: var(--clr-black);
+            font-weight: 900;
+            font-size: 24px;
+        }
+
+        p{
+            color: var(--clr-body-text);
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
 
 
 
