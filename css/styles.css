@@ -284,16 +284,11 @@ footer {
 }
 
 #brands {
-    display: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 6rem;
+        display: none;
     }
 
     .headline h2 {
@@ -305,13 +300,26 @@ footer {
 
     .container-2 {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "images features features";
         padding-left: var(--container-padding);
         padding-right: var(--container-padding);
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .features {
+        text-align: center;
+
+        h2 {
+            color: #131022;
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        p {
+            color: #585C7B;
+            font-size: 18px;
+            font-weight: 400;
+        }
     }
 
     .headline h2 {
@@ -340,7 +348,7 @@ footer {
 
     .icon-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .icon-image {
@@ -364,6 +372,30 @@ footer {
     }
 
     @media (min-width: 768px) {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 6rem;
+        }
+
+        .container-2 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "images features features";
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .icon-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
         .container-2 {
             display: flex;
         }
@@ -374,6 +406,29 @@ footer {
     }
 
     @media (min-width: 1400px) {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 6rem;
+        }
+
+        .container-2 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "images features features";
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .icon-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
 
         .hidden {
             display: block;
