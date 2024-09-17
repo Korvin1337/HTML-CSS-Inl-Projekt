@@ -907,6 +907,170 @@ footer {
 }
 
 
+
+#faq {
+    background-color: #FFFFFF;
+
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: "text-questions dropdown-questions";
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .text-questions {
+            grid-area: text-questions;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-bottom: 3rem;
+
+            .text-questions-h2 {
+                width: 80%;
+                font-size: 32px;
+                font-weight: 900;
+                color: var(--clr-black);
+            }
+
+            .text-questions-p {
+                width: 95%;
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--clr-body-text);
+            }
+        }
+
+        .question-boxes {
+            display: flex;
+        }
+
+        .question-box-1 {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
+            border-radius: 10px;
+            display: grid;
+            padding-left: 1rem;
+            padding-right: 1.5rem;
+            padding-top: 1.5em;
+            padding-bottom: 1.5rem;
+            grid-template-columns: 1fr;
+
+            .question-box-p {
+                font-size: 14px;
+                color: var(--clr-body-text);
+            }
+
+            .blue-text-arrow {
+                color: var(--clr-primary);
+                font-weight: 600;
+
+                .fa-solid.fa-arrow-right {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .question-box-2 {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.02);
+            border-radius: 10px;
+            display: grid;
+            padding-left: 1rem;
+            padding-right: 1.5rem;
+            padding-top: 1.5em;
+            padding-bottom: 1.5rem;
+            margin-left: 1.5rem;
+            grid-template-columns: 1fr;
+
+            .question-box-image {
+                padding-bottom: 1rem;
+            }
+
+            .question-box-p {
+                padding-bottom: 1rem;
+                font-size: 14px;
+                color: var(--clr-body-text);
+            }
+
+            .question-box-a {
+                padding-bottom: 1rem;
+            }
+
+            .green-text-arrow {
+                color: var(--clr-success);
+                font-weight: 600;
+
+                .fa-solid.fa-arrow-right {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .dropdown-questions {
+            grid-area: dropdown-questions;
+            padding-left: 5rem;
+        }
+
+        .dropdown-span-closed {
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .dropdown-span-h3 {
+                margin-left: 1.5rem;
+                color: var(--clr-black);
+                font-weight: 600;
+            }
+
+            .dropdown-span-image {
+                margin-right: 1.5rem;
+            }
+
+        }
+
+        .dropdown-span-open {
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: grid;
+            margin-bottom: 1rem;
+
+
+            .dropdown-span-h3-image {
+                display: flex;
+                justify-content: space-between;
+                margin-right: .5rem;
+                margin-left: 1.5rem;
+                margin-top: 1rem;
+                color: var(--clr-black);
+                font-weight: 600;
+            }
+
+            .dropdown-span-text {
+                display: flex;
+                justify-content: center;
+                margin-right: .1rem;
+                margin-left: 1.5rem;
+                margin-bottom: 1rem;
+                color: var(--clr-body-text);
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+        }
+
+    }
+}
+
+
 #hero {
     background: rgb(99,102,241);
     background: linear-gradient(0deg, rgba(99,102,241,0.09962487910721463) 0%, rgba(218,70,239,0.054608801936796625) 42%, rgba(241,244,253,0.06747053827120175) 83%);
